@@ -1,0 +1,19 @@
+@import "../../../assets//defines.scss";
+
+.grayBody {
+  background-color: $color10;
+}
+.drawerLogo {
+  width: 100%;
+  margin-right: "16px !important";
+
+  & img {
+    max-height: 40px;
+    margin-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.menuIcon {
+  margin: 8px;
+}

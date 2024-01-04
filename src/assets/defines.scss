@@ -1,0 +1,177 @@
+// $primColor: #6a14d1;
+$primColor: #7e59ee;
+$primColor2: #440083;
+$hoverColor: #e8d4ff;
+$secColor: #c82090;
+$secColor2: #fe9192;
+$secColor3: #77cfdb;
+$secColor4: #26ab6d;
+$secColor5: #ed5254;
+$secColor6: #f5cd004d;
+$secColor7: #f5cd00;
+$color1: #343633;
+$color2: #444444;
+$color3: #707070;
+$color4: #8e8e8e;
+$color5: #b6b6b680;
+$color6: #ffffff;
+$color7: #f5f5f5;
+$color8: #f0f0f0;
+$color9: #fafafa;
+$color10: #e5e5e5;
+$color12: "#FFEEEE";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: IRANSans !important;
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url(".././assets/fonts/iranSans/eot/IRANSansWeb(FaNum)_Bold.eot");
+  src: url(".././assets/fonts/iranSans/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */
+      url(".././assets/fonts/iranSans/woff2/IRANSansWeb(FaNum)_Bold.woff2")
+      format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+      url(".././assets/fonts/iranSans/woff/IRANSansWeb(FaNum)_Bold.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url(".././assets/fonts/iranSans/ttf/IRANSansWeb(FaNum)_Bold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url(".././assets/fonts/iranSans/eot/IRANSansWeb(FaNum)_Medium.eot");
+  src: url(".././assets/fonts/iranSans/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */
+      url(".././assets/fonts/iranSans/woff2/IRANSansWeb(FaNum)_Medium.woff2")
+      format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+      url(".././assets/fonts/iranSans/woff/IRANSansWeb(FaNum)_Medium.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url(".././assets/fonts/iranSans/ttf/IRANSansWeb(FaNum)_Medium.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url(".././assets/fonts/iranSans/eot/IRANSansWeb(FaNum)_Light.eot");
+  src: url(".././assets/fonts/iranSans/eot/IRANSansWeb(FaNum)_Light.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */
+      url(".././assets/fonts/iranSans/woff2/IRANSansWeb(FaNum)_Light.woff2")
+      format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+      url(".././assets/fonts/iranSans/woff/IRANSansWeb(FaNum)_Light.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url(".././assets/fonts/iranSans/ttf/IRANSansWeb(FaNum)_Light.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url(".././assets/fonts/iranSans/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+  src: url(".././assets/fonts/iranSans/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */
+      url(".././assets/fonts/iranSans/woff2/IRANSansWeb(FaNum)_UltraLight.woff2")
+      format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+      url(".././assets/fonts/iranSans/woff/IRANSansWeb(FaNum)_UltraLight.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url(".././assets/fonts/iranSans/ttf/IRANSansWeb(FaNum)_UltraLight.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url(".././assets/fonts/iranSans/eot/IRANSansWeb(FaNum).eot");
+  src: url(".././assets/fonts/iranSans/eot/IRANSansWeb(FaNum).eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url(".././assets/fonts/iranSans/woff2/IRANSansWeb(FaNum).woff2")
+      format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+      url(".././assets/fonts/iranSans/woff/IRANSansWeb(FaNum).woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url(".././assets/fonts/iranSans/ttf/IRANSansWeb(FaNum).ttf")
+      format("truetype");
+}
+
+.h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+.h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+}
+.h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+}
+.h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+.h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+.h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+.h7 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.bodyXXL {
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+}
+.bodyXL {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.bodyM {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.bodyS {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}

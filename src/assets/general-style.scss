@@ -1,0 +1,278 @@
+@import "./defines.scss";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+//==> Image gallery
+.image-gallery-slide {
+  img {
+    border-radius: 8px;
+  }
+}
+
+.image-gallery-thumbnails-container {
+  justify-content: space-between;
+  display: flex;
+}
+.image-gallery-thumbnails-container {
+  button {
+    width: 150px;
+    border-radius: 8px;
+  }
+}
+
+.image-gallery-thumbnail-image {
+  border-radius: 8px;
+}
+// <==
+
+.underlined {
+  border-bottom: 1px solid lightgray;
+}
+.topLined {
+  border-top: 1px solid lightgray;
+}
+.primaryButton {
+  width: 130px;
+  margin: 16px;
+}
+.iconList {
+  list-style-type: none;
+  margin-top: 16px;
+
+  & li {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  & p {
+    margin-right: 8px;
+  }
+}
+.fullW {
+  width: 100%;
+}
+.flexRowReverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flexRowCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexRowBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexColCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexColEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flexRowstart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexRowEnd {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexRowCenter_end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+// user panel forms ans fields
+.userFormStyle {
+  input {
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+  }
+  input:not([type="textarea"]) {
+    border: none;
+    border-bottom: 1px solid $color5;
+  }
+
+  input[type="textarea"] {
+    height: 165px;
+    border: 1px solid $color5;
+  }
+}
+//
+.dateTime-input > div > div:not(.MuiInputAdornment-root) {
+  position: absolute;
+  width: 100%;
+}
+
+// Hiding mui values in date/time field (we just need to see date picker time picker value)
+.dateTime-input {
+  & #date,
+  & #time {
+    color: transparent;
+  }
+}
+.rmdp-container {
+  width: 100%;
+}
+.rmdp-container input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding-left: 30px;
+}
+.rmdp-input:focus {
+  border: none;
+  box-shadow: none;
+}
+.link-style-text {
+  &:hover {
+    cursor: pointer;
+  }
+  color: $primColor;
+}
+.table-white-back {
+  background-color: $color6;
+}
+.normal-link {
+  text-decoration: none;
+  color: inherit;
+}
+.bordered-container {
+  border: 1px solid $color5;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.primaryTableHeader th {
+  background-color: $primColor;
+  color: $color9;
+}
+
+a.normal-link.active use {
+  stroke: $primColor !important;
+}
+.normal-link.active {
+  color: $primColor;
+}
+
+.set-menu-active .active {
+  color: $primColor;
+  background-color: $hoverColor;
+  border-radius: 999px;
+  & use {
+    stroke: $primColor !important;
+  }
+}
+
+// => Datatable
+
+.tableFooterDir {
+  & .MuiDataGrid-footerContainer {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .MuiDataGrid-row:hover {
+    cursor: pointer;
+  }
+}
+
+.tableFooterDir .MuiDataGrid-columnHeaders {
+  background-color: $hoverColor;
+  color: $primColor;
+  border-bottom: 1px solid $primColor !important;
+  width: fit-content;
+  & svg {
+    color: $primColor;
+  }
+}
+
+.MuiDataGrid-cell:focus,
+.MuiDataGrid-cell:focus-within {
+  outline: none !important;
+}
+.MuiDataGrid-main {
+  overflow: auto !important;
+}
+
+.MuiDataGrid-main .MuiDataGrid-virtualScroller {
+  overflow: visible;
+}
+
+// <== datatable
+
+// ==> Modal
+.modal {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 80%;
+  max-height: 80vh;
+  background-color: $color8;
+  overflow: hidden;
+}
+.modalTitle {
+  background-color: $color8;
+  height: 72px;
+  padding: 16px 24px;
+  box-shadow: 2px 2px 8px 0px $color5;
+}
+
+.modalBody {
+  padding: 16px 40px;
+  // min-height: 400px;
+  overflow: auto;
+}
+.formSection {
+  background-color: $color9;
+  border: 1px solid color5;
+  border-radius: "4px  4px 0 0";
+}
+
+.modal-content {
+  min-height: 48vh;
+}
+// <== Modal
+
+.MuiDrawer-paper {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color4;
+  }
+}
+.buttongroup {
+  & .activeBtn {
+    background-color: $secColor7 !important;
+  }
+}
+.categoryBtn.activeBtn {
+  background-color: $hoverColor !important;
+}
